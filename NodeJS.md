@@ -148,3 +148,65 @@ e)    babel-polyfill
 <p>
 	<img src="nodejs-require.jpg" alt="">
 </p>
+
+
+> middleware
+
+```
+中间件就是类似一个过滤器的东西;
+1、只是整个处理流程中的一个或多个步骤的封装
+2、可以next执行下一个中间件
+3、处理的数据是 request 和 response 的数据
+
+eg.原型
+function (req, res, next) {
+  // 中间件
+}
+```
+* 列表
+
+```
+logger: 用户请求日志中间件
+
+csrf: 跨域请求伪造保护中间件
+
+compress: gzip压缩中间件
+
+basicAuth: basic认证中间件
+
+bodyParser: 请求内容解析中间件
+
+json: JSON解析中间件
+
+urlencoded: application/x-www-form-urlencode请求解析中间件
+
+multipart: multipart/form-data请求解析中间件
+
+timeout: 请求超时中间件
+
+cookieParser: cookie解析中间件
+
+session: 会话管理中间件
+
+cookieSession: 基于cookies的会话中间件
+
+methodOverride: HTTP伪造中间件
+
+reponseTime: 计算响应时间中间件
+
+staticCache: 缓存中间件
+
+static: 静态文件处理中间件
+
+directory: 目录列表中间件
+
+vhost: 虚拟二级域名映射中间件
+
+favicon: 网页图标中间件
+
+limit: 请求内容大小限制中间件
+
+query: URL解析中间件
+
+errorHadnler: 错误处理中间件
+```
