@@ -1,3 +1,48 @@
+# Angular 2.0 for mobile
+
+* [Angular-cli](http://blog.csdn.net/alabadazi/article/details/53288885)
+
+```
+npm install -g angular-cli
+ng --help
+ng new Project_Name
+cd Project_Name
+ng serve
+ng serve --host 127.0.0.0 --port 4200 --live-reload-port 49153
+
+生成组件、指令、管道以及服务（ng generate or ng g）
+ng generate component my-new-component
+ng g component new-cmp
+ng g component ../newer-cmp
+
+可被构建的组件类型
+Scaffold            Usage
+Component           ng g component my-new-component
+Directive           ng g directive my-new-directive
+Pipe                ng g pipe my-new-pipe
+Service             ng g service my-new-service
+Class               ng g class my-new-class
+Interface           ng g interface my-new-interface
+Enum                ng g enum my-new-enum
+Module              ng g module my-module
+
+编译
+ng build
+
+ng build 可以指定两种编译目标： (--target=production or --target=development) 和 (--environment=dev or --environment=prod)
+```
+
+
+
+
+
+
+
+
+
+
+
+
 
 # AngularJS 2.0 Start
 
